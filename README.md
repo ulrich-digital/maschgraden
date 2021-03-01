@@ -19,21 +19,23 @@ Setup für Maschgraden-Schaufenster
 ## Hardware-Topologie
 Raspberry Pi
 *Variante 1*
-IN: Sensor
-OUT:
-- Licht
-- M1 + M2 > Alle Bewegungen bei M1 bzw. M2 werden mechanisch gelöst
+* IN
+  * Sensor
+* OUT
+  * Licht
+  * M1 + M2 > Alle Bewegungen bei M1 bzw. M2 werden mechanisch gelöst
 
 *Variante 1*
-IN: Sensor
-OUT:
-- Licht
-- M1 koerper_aufrichten
-- M1 kopf_dreher
-- M1 arm_heber
-- M2 koerper_aufrichten
-- M2 kopf_dreher
-- M2 arm_heber
+* IN:
+  * Sensor
+* OUT:
+  * Licht
+  * M1 koerper_aufrichten
+  * M1 kopf_dreher
+  * M1 arm_heber
+  * M2 koerper_aufrichten
+  * M2 kopf_dreher
+  * M2 arm_heber
 
 
 
@@ -41,7 +43,7 @@ OUT:
 1. Auf Sensor warten
 2. Wenn Sensor auslöst: Funktion zum_wohl aufrufen
 
-## Funktion zum_wohl
+### Funktion zum_wohl
 1. funktion_läuft = true
 2. licht_an
 3. koerper_aufrichten 
