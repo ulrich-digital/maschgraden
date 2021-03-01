@@ -49,26 +49,8 @@ Setup für Maschgraden-Schaufenster
 2. Wenn Sensor auslöst: Funktion zum_wohl aufrufen
 
 ### Funktion zum_wohl
-1. funktion_läuft = true
-2. licht_an
-3. koerper_aufrichten 
-4. anschauen 
-5. zum_fenster_schauen 
-6. glas_heben 
-7. glas_senken 
-8. licht_aus 
-9. gerade_aus_schauen 
-10. koerper_senken 
-11. 5 sekunden warten
-12. funktion_läuft = false
-
-## Figur 1 + Figur 2 unterscheiden
-* Wird es Bewegungen geben, die identisch sind?
-* Oder sollen möglichst viele Parameter individuell anpassbar sein?
-* Wenn viele Parameter individuell anpassbar sind, könnte dies die beiden Figuren besser/unterschiedlicher charakterisieren.
-
 ```
-if (zumWohl){
+function zum_wohl(){
     funktion_laeuft = true;
     if (funktion_laeuft == true){
         exit();
@@ -79,11 +61,23 @@ if (zumWohl){
         zum_fenster_schauen(); 
         glas_heben(); 
         glas_senken(); 
-        licht_aus(); 
-        gerade_aus_schauen(); 
-        koerper_senken(); 
-        5 sekunden warten(); 
+        go_to_startposition();
+        wait_five_sec(); 
         funktion_laeuft = false;
     }
 }
+
+function go_to_startposition(){
+    licht_aus(); 
+    gerade_aus_schauen(); 
+    koerper_senken(); 
+}
+
 ```
+
+## Figur 1 + Figur 2 unterscheiden
+* Wird es Bewegungen geben, die identisch sind?
+* Oder sollen möglichst viele Parameter individuell anpassbar sein?
+* Wenn viele Parameter individuell anpassbar sind, könnte dies die beiden Figuren besser/unterschiedlicher charakterisieren.
+
+
