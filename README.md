@@ -18,7 +18,7 @@ Setup für Maschgraden-Schaufenster
 
 ## Hardware-Topologie
 Raspberry Pi
-*Variante 1*
+### Variante 1
 * IN
   * Sensor
 * OUT
@@ -26,7 +26,7 @@ Raspberry Pi
   * M1 > Alle Bewegungen bei M1 werden mechanisch gelöst
   * M2 > Alle Bewegungen bei M2 werden mechanisch gelöst
 
-*Variante 2*
+### Variante 2
 * IN:
   * Sensor
 * OUT:
