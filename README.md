@@ -69,20 +69,21 @@ Setup für Maschgraden-Schaufenster
 
 ```
 if (zumWohl){
-  funktion_laeuft = true;
-  if (funktion_laeuft == true){
-  }else{
-  licht_an();
-  koerper_aufrichten(); 
-  anschauen(); 
-  zum_fenster_schauen(); 
-  glas_heben(); 
-  glas_senken(); 
-  licht_aus(); 
-  gerade_aus_schauen(); 
-  koerper_senken(); 
-  5 sekunden warten(); 
-  funktion_laeuft = false;
-  }
+    funktion_laeuft = true;
+    if (funktion_laeuft == true){
+        exit();
+    }else{
+        licht_an();
+        koerper_aufrichten(); 
+        anschauen(); 
+        zum_fenster_schauen(); 
+        glas_heben(); 
+        glas_senken(); 
+        licht_aus(); 
+        gerade_aus_schauen(); 
+        koerper_senken(); 
+        5 sekunden warten(); 
+        funktion_laeuft = false;
+    }
 }
 ```
