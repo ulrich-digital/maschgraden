@@ -66,3 +66,9 @@ Setup für Maschgraden-Schaufenster
 * Wird es Bewegungen geben, die identisch sind?
 * Oder sollen möglichst viele Parameter individuell anpassbar sein?
 * Wenn viele Parameter individuell anpassbar sind, könnte dies die beiden Figuren besser/unterschiedlicher charakterisieren.
+
+```
+if (isAwesome){
+  return true
+}
+```
