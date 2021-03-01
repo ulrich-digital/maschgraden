@@ -68,7 +68,21 @@ Setup für Maschgraden-Schaufenster
 * Wenn viele Parameter individuell anpassbar sind, könnte dies die beiden Figuren besser/unterschiedlicher charakterisieren.
 
 ```
-if (isAwesome){
-  return true
+if (zumWohl){
+  funktion_laeuft = true;
+  if (funktion_laeuft == true){
+  }else{
+  licht_an();
+  koerper_aufrichten(); 
+  anschauen(); 
+  zum_fenster_schauen(); 
+  glas_heben(); 
+  glas_senken(); 
+  licht_aus(); 
+  gerade_aus_schauen(); 
+  koerper_senken(); 
+  5 sekunden warten(); 
+  funktion_laeuft = false;
+  }
 }
 ```
