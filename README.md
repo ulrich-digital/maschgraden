@@ -39,19 +39,19 @@ OUT (Variante 2):
 1.1 Wenn Sensor auslöst: Funktion zum_wohl aufrufen
 
 2. Funktion zum_wohl
-2.1. funktion_läuft = true
-2.2. if funktion_läuft = true > nichts tun
-2.3. else 
-2.3.1. funtkion licht_an aufrufen
-2.3.2. funktion koerper_aufrichten aufrufen
-2.3.3. funktion anschauen aufrufen
-2.3.4. funktion zum_fenster_schauen aufrufen
-2.3.5. funktion glas_heben aufrufen
-2.3.6. funktion glas_senken aufrufen
-2.3.7. funktion licht_aus aufrufen
-2.3.8. funktion gerade_aus_schauen aufrufen
-2.3.9. funktion koerper_senken aufrufen
-2.3.9. 5 sekunden warten
+  1. funktion_läuft = true
+    1. if funktion_läuft = true > nichts tun
+  2.
+    1. funtkion licht_an aufrufen
+    2. funktion koerper_aufrichten aufrufen
+    3. funktion anschauen aufrufen
+    4. funktion zum_fenster_schauen aufrufen
+    5. funktion glas_heben aufrufen
+    6. funktion glas_senken aufrufen
+    7. funktion licht_aus aufrufen
+    8. funktion gerade_aus_schauen aufrufen
+    9. funktion koerper_senken aufrufen
+    10. 5 sekunden warten
 
 
 
