@@ -36,9 +36,8 @@ OUT (Variante 2):
 
 ## Programmablauf
 1. Auf Sensor warten
-1.1 Wenn Sensor auslöst: Funktion zum_wohl aufrufen
-
-2. Funktion zum_wohl
+2. Wenn Sensor auslöst: Funktion zum_wohl aufrufen
+3. Funktion zum_wohl
   1. funktion_läuft = true
     1. if funktion_läuft = true > nichts tun
   2.
