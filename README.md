@@ -1,4 +1,4 @@
-# maschgraden
+# Maschgraden-Schaufenster
 Setup für Maschgraden-Schaufenster
 
 ### Anweisung an Schaufenster-Scheibe
