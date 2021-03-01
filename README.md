@@ -16,8 +16,12 @@ Setup für Maschgraden-Schaufenster
 11. Maschgraden schauen gerade aus.
 13. Maschgraden senken sich.
 
+## Hardware
+* Raspberry Pi
+* Sensor (Distanz, Erschütterung oder Helligkeit)
+* 6 Motoren (Servo oder ...)
+
 ## Hardware-Topologie
-Raspberry Pi
 ### Variante 1
 * IN
   * Sensor
