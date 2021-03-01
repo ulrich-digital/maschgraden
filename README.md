@@ -17,13 +17,16 @@ Setup für Maschgraden-Schaufenster
 13. Maschgraden senken sich.
 
 ## Hardware-Topologie
-Sensor
 Raspberry Pi
+*Variante 1*
 IN: Sensor
-OUT (Variante 1):
+OUT:
 - Licht
 - M1 + M2 > Alle Bewegungen bei M1 bzw. M2 werden mechanisch gelöst
-OUT (Variante 2):
+
+*Variante 1*
+IN: Sensor
+OUT:
 - Licht
 - M1 koerper_aufrichten
 - M1 kopf_dreher
