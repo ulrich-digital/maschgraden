@@ -63,6 +63,6 @@ Setup für Maschgraden-Schaufenster
 12. funktion_läuft = false
 
 ## Figur 1 + Figur 2 unterscheiden
-Wird Bewegungen geben, die identisch sind?
-Oder sollen möglichst viele Parameter individuell anpassbar sein?
-Könnte die beiden Figuren besser/unterschiedlicher charakterisieren.
+* Wird es Bewegungen geben, die identisch sind?
+* Oder sollen möglichst viele Parameter individuell anpassbar sein?
+* Wenn viele Parameter individuell anpassbar sind, könnte dies die beiden Figuren besser/unterschiedlicher charakterisieren.
