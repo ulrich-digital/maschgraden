@@ -37,20 +37,23 @@ OUT (Variante 2):
 ## Programmablauf
 1. Auf Sensor warten
 2. Wenn Sensor auslöst: Funktion zum_wohl aufrufen
-3. Funktion zum_wohl
-  1. funktion_läuft = true
-    1. if funktion_läuft = true > nichts tun
-  2.
-    1. funtkion licht_an aufrufen
-    2. funktion koerper_aufrichten aufrufen
-    3. funktion anschauen aufrufen
-    4. funktion zum_fenster_schauen aufrufen
-    5. funktion glas_heben aufrufen
-    6. funktion glas_senken aufrufen
-    7. funktion licht_aus aufrufen
-    8. funktion gerade_aus_schauen aufrufen
-    9. funktion koerper_senken aufrufen
-    10. 5 sekunden warten
 
+## Funktion zum_wohl
+1. funktion_läuft = true
+2. licht_an
+3. koerper_aufrichten 
+4. anschauen 
+5. zum_fenster_schauen 
+6. glas_heben 
+7. glas_senken 
+8. licht_aus 
+9. gerade_aus_schauen 
+10. koerper_senken 
+11. 5 sekunden warten
+12. funktion_läuft = false
 
+## Figur 1 + Figur 2 unterscheiden
+Wird Bewegungen geben, die identisch sind?
+Oder sollen möglichst viele Parameter individuell anpassbar sein?
+Könnte die beiden Figuren besser/unterschiedlicher charakterisieren.
 
