@@ -1,4 +1,4 @@
 # Maschgraden-Schaufenster
 Setup für Maschgraden-Schaufenster
 
-[Wiki](https://matthiasulrich.github.io/maschgraden/)
+[Wiki](https://github.com/matthiasulrich/maschgraden/wiki)
