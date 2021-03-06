@@ -5,3 +5,4 @@ Setup für Maschgraden-Schaufenster
 [Wiki](https://github.com/matthiasulrich/maschgraden/wiki)
 
 # Test
+Das ist nur ein Test
