@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
+# https://github.com/adafruit/Adafruit_CircuitPython_ServoKit/blob/main/examples/servokit_all_servos_sequential.py
 
 """Example that iterates through a servo on every channel, sets 10 Degrees steps to 180 and then back to 0."""
 import time
