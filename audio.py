@@ -5,7 +5,7 @@ from pygame import mixer
 mixer.init()
 
 # Loading the song
-mixer.music.load("song.mp3")
+mixer.music.load("/home/pi/Music/audio.mp3")
 
 # Setting the volume
 mixer.music.set_volume(0.7)
