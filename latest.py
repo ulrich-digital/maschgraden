@@ -485,11 +485,7 @@ while True:
     
     #func_shakehead()
     #func_mountbody()
-    # programm beenden
-    print("Programm beenden")
-    from sys import exit
-    exit()
-    
+
     # https://sourceforge.net/p/raspberry-gpio-python/wiki/Inputs/
     GPIO.wait_for_edge(channel_vibr, GPIO.BOTH)
     print("Input is LOW => Vibrationsalarm!!!")
@@ -504,9 +500,9 @@ while True:
 
     GPIO.cleanup()
 
-    wartezeit = 1 # Sekunden
+    wartezeit = 30 # Sekunden
     print("Warte für", wartezeit, "Sekunden")
-    time.sleep(wartezeit) # Warte für 20 Sekunden
+    time.sleep(wartezeit) # Warte für 30 Sekunden
         
     
 
