@@ -1,5 +1,5 @@
 # import libraries 
-import board # stepper
+import board # stepper 
 import RPi.GPIO as GPIO
 import time
 import random
@@ -136,7 +136,7 @@ KopfDrehen46_startWinkel = 90 # Startwinkel (Mitte)
 KopfDrehen46_warte = 0.2 # Wartezeit nach Drehung
 Kopf46_servo = 12
 
-#Kopf47 schütteln
+#Kopf47 schuetteln
 Servo_Kopf47_maxWinkel = 180
 Servo_Kopf47_minWinkel = 0
 Kopf47_sek = .003 # Wartezeit nach Winkel anfahren defnieren
@@ -158,8 +158,9 @@ Kopf46_warte = 0.2 # Wartezeit nach Drehung
 Kopf46_servo = 12
 
 
-kit46.servo[3].angle = 0
 kit47.servo[15].angle = 180
+kit46.servo[3].angle = 0
+
 
 # https://www.geeksforgeeks.org/python-playing-audio-file-in-pygame/
 # sound settings
@@ -208,8 +209,8 @@ def func_mountbody():
         
         print(Rumpf47_winkel)
         
-        Arm47_winkel = Arm47_startWinkel - i * Arm47_schrittWinkel # vorwärts
-        Arm46_winkel = Arm46_startWinkel + i * Arm46_schrittWinkel # vorwärts
+        Arm47_winkel = Arm47_startWinkel - i * Arm47_schrittWinkel # vorwaerts
+        Arm46_winkel = Arm46_startWinkel + i * Arm46_schrittWinkel # vorwaerts
         
         # Rumpf 47
         kit47.servo[Rumpf47_servo1].angle = Rumpf47_winkel
@@ -233,7 +234,7 @@ def func_mountbody():
     Arm47_lastPosition = Arm47_winkel # wird zum Zurückfahren benötigt (gleicher Winkel)
     Arm46_lastPosition = Arm46_winkel
     
-    kit47.servo[3].angle = 100
+    kit47.servo[3].angle = 100 # Blätz
     kit46.servo[15].angle = 90
     
     time.sleep(2)
@@ -254,8 +255,8 @@ def func_mountbody():
     # Arm heben *******************************************************************************************************
     """
     for i in range(1, Arm47Hub_maxValue):
-        Arm47Hub_winkel = Arm47_lastPosition + i * Arm47Hub_schrittWinkel # vorwärts
-        Arm46Hub_winkel = Arm46_lastPosition - i * Arm46Hub_schrittWinkel # vorwärts
+        Arm47Hub_winkel = Arm47_lastPosition + i * Arm47Hub_schrittWinkel # vorwaerts
+        Arm46Hub_winkel = Arm46_lastPosition - i * Arm46Hub_schrittWinkel # vorwaerts
         print("Arm46Hub_winkel", Arm46Hub_winkel)
         kit47.servo[Arm47Hub_servo].angle = Arm47Hub_winkel
         kit46.servo[Arm46Hub_servo].angle = Arm46Hub_winkel
@@ -307,7 +308,7 @@ def func_mountbody():
     # Pin 4
     # nach rechts
     for i in range(1, Hand_Value_min):
-        Hand_winkel = Hand_winkel_neu - i * Hand_schrittWinkel # vorwärts
+        Hand_winkel = Hand_winkel_neu - i * Hand_schrittWinkel # vorwaerts
         if Hand_winkel < Servo_1109mg_minWinkel or Hand_winkel > Servo_1109mg_maxWinkel:
             break
         kit47.servo[4].angle = Hand_winkel
@@ -349,8 +350,8 @@ def func_mountbody():
         Rumpf47_winkel = Rumpf47_winkel_neu + Rumpf47_schrittWinkel * i # Schritte
         Rumpf46_winkel = Rumpf46_lastPosition + Rumpf46_schrittWinkel * i # Schritte
         
-        Arm47_winkel = Arm47_lastPosition + i * Arm47_schrittWinkel # vorwärts
-        Arm46_winkel = Arm46_lastPosition - i * Arm46_schrittWinkel # vorwärts
+        Arm47_winkel = Arm47_lastPosition + i * Arm47_schrittWinkel # vorwaerts
+        Arm46_winkel = Arm46_lastPosition - i * Arm46_schrittWinkel # vorwaerts
         
         kit47.servo[Rumpf47_servo1].angle = Rumpf47_winkel
         kit47.servo[Rumpf47_servo2].angle = Rumpf47_winkel
@@ -385,12 +386,12 @@ def func_mountbody():
     kit47.servo[Arm46Hub_servo].angle = 180
 
 def func_shakehead():
-    print ("Kopfschütteln:") # Kopfschütteln
+    print ("Kopfschuetteln:") # Kopfschuetteln
     
     light_on(21) # Licht an
 
 
-    # Kopf schütteln *******************************************************************************************************
+    # Kopf schuetteln *******************************************************************************************************
     # Pin 5 & 12
 
     # nach links
@@ -403,7 +404,7 @@ def func_shakehead():
         kit46.servo[Kopf46_servo].angle = Kopf46_winkel
         time.sleep(Kopf47_sek) # Warte
 
-    print(i, Kopf47_winkel, "°") # Winkel ausgeben
+    # print(i, Kopf47_winkel, "°") # Winkel ausgeben
     time.sleep(Kopf47_warte/4)
 
     # nach rechts
@@ -416,7 +417,7 @@ def func_shakehead():
         kit46.servo[Kopf46_servo].angle = Kopf46_winkel
         time.sleep(Kopf47_sek) # Warte
 
-    print(i, Kopf47_winkel, "°") # Winkel ausgeben
+    # print(i, Kopf47_winkel, "°") # Winkel ausgeben
     time.sleep(Kopf47_warte)
 
     # nach links
@@ -429,7 +430,7 @@ def func_shakehead():
         kit46.servo[Kopf46_servo].angle = Kopf46_winkel
         time.sleep(Kopf47_sek) # Warte
 
-    print(i, Kopf47_winkel, "°") # Winkel ausgeben
+    # print(i, Kopf47_winkel, "°") # Winkel ausgeben
     time.sleep(Kopf47_warte)
 
     # nach rechts
@@ -442,7 +443,7 @@ def func_shakehead():
         kit46.servo[Kopf46_servo].angle = Kopf46_winkel
         time.sleep(Kopf47_sek) # Warte
 
-    print(i, Kopf47_winkel, "°") # Winkel ausgeben
+    # print(i, Kopf47_winkel, "°") # Winkel ausgeben
     time.sleep(Kopf47_warte)
 
     # nach links
@@ -455,7 +456,7 @@ def func_shakehead():
         kit46.servo[Kopf46_servo].angle = Kopf46_winkel
         time.sleep(Kopf47_sek) # Warte
 
-    print(i, Kopf47_winkel, "°") # Winkel ausgeben
+    # print(i, Kopf47_winkel, "°") # Winkel ausgeben
     time.sleep(Kopf47_warte)
 
     # Kopf zurückdrehen *******************************************************************************************************
@@ -463,7 +464,7 @@ def func_shakehead():
     # nach rechts
     kit47.servo[Kopf47_servo].angle = 90 # Mitte
     kit46.servo[Kopf46_servo].angle = 90 # Mitte
-    print("90°") # Winkel ausgeben
+    # print("90°") # Winkel ausgeben
     time.sleep(.5)
 
     time.sleep(5)
@@ -500,12 +501,6 @@ while True:
 
     GPIO.cleanup()
 
-    wartezeit = 30 # Sekunden
+    wartezeit = 5 # Sekunden
     print("Warte für", wartezeit, "Sekunden")
     time.sleep(wartezeit) # Warte für 30 Sekunden
-        
-    
-
-
-
-
