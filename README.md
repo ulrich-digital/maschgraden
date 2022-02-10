@@ -5,6 +5,6 @@ Setup für Maschgraden-Schaufenster
 [Wiki](https://github.com/matthiasulrich/maschgraden/wiki)
 
 - pi
-- - halloauto2021 (aktiv)
-- - hallovelo21
+- - halloauto2021 
+- - hallovelo21 (aktiv)
 
